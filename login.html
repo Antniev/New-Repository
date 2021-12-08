@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Login</title> 
+    <script> //determines the sv=cript to be used in the website
+        
+    function login() { //creates a function and assigns it the name you type
+        var username = prompt("Enter username, cannot be larger than 20 characters") //creates a variable, in this case a prompt and displays the text inside of the paranthesis
+            var max = 20 //creates a maximum variable with an integer assigned to it's value
+            if (username.length > max){ //creates an if statement that has the program check if the conditions are true or false
+                alert("Username length exceeds the limit, please re-enter Username") //if the if statement is triggered this alert will be activated as a repsonse
+                login();} // if the statement is triggered the if statement will restart the function
+            
+    }
+    login(); //completes the function and starts the web page
+
+    function badge() { //creates a function and assigns it the name you type
+        var badgeNumber = prompt("Enter Badge Number, cannot be large than 3 digits") //creates a variable, in this case a prompt and displays the text inside of the paranthesis
+            var max = 3 //creates a maximum variable with an integer assigned to it's value
+            if (badgeNumber.length > max){ //creates an if statement that has the program check if the conditions are true or false
+                alert("Badge Number length exceeds the limit, please re-enter Badge Number")//if the if statement is triggered this alert will be activated as a repsonse
+                badge();} // if the statement is triggered the if statement will restart the function
+            
+    }
+    badge(); //completes the function and starts the web page
+
+
+    </script>
+</head>
+<body style="background-color: burlywood;"> 
+        <h1>Login Complete</h1>
+        <p> Congratulations on logging into the page! </p>
+    
+</body>
+</html>
