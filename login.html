@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Login</title>
+    <script>
+        
+    function login() {
+        var username = prompt("Enter username")
+            var max = 20
+            if (username.length > max){
+                alert("Username length exceeds the limit, please re-enter Username")
+                login();}
+            
+    }
+    login();
+
+    function badge() {
+        var badgeNumber = prompt("Enter Badge Number, cannot be large than 3 digits")
+            var max = 3
+            if (badgeNumber.length > max){
+                alert("Badge Number length exceeds the limit, please re-enter Badge Number")
+                badge();}
+            
+    }
+    badge();
+
+
+    </script>
+</head>
+<body style="background-color: burlywood;">
+    <h1>Login Complete</h1>
+    
+</body>
+</html>
