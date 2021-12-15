@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <img src = "C:\Users\nieve\Downloads\UATspaceLogo.jpg">
+        <title>Luanch Sequence</title>
+        <script>
+            function StartTheCountdown() //defines the new function Start the Countdown
+            {
+
+                var countdown = 10; //sets the variable countdown equal to 10
+                var timeout = 10000; //sets the variable timeout = to 1000
+                setTimeout(() => { //defines the setTimeout functio with the condition that the variables be equalt to or less than
+                    document.getElementById("CountdownDisplay").innerHTML = "Blast Off!";
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000 //subtracts the timeout variable to be itself - 1000
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+            
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => {//functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => { //functions the same as the lines above it
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+            }
+            function login() { //creates a function and assigns it the name you type
+                var username = prompt("Enter username, cannot be larger than 20 characters") //creates a variable, in this case a prompt and displays the text inside of the paranthesis
+                    var max = 20 //creates a maximum variable with an integer assigned to it's value
+                    if (username.length > max){ //creates an if statement that has the program check if the conditions are true or false
+                        alert("Username length exceeds the limit, please re-enter Username") //if the if statement is triggered this alert will be activated as a repsonse
+                        login();} // if the statement is triggered the if statement will restart the function
+                    
+            }
+            login(); //completes the function and starts the web page
+
+            function badge() { //creates a function and assigns it the name you type
+                var badgeNumber = prompt("Enter Badge Number, cannot be large than 3 digits") //creates a variable, in this case a prompt and displays the text inside of the paranthesis
+                    var max = 3 //creates a maximum variable with an integer assigned to it's value
+                    if (badgeNumber.length > max){ //creates an if statement that has the program check if the conditions are true or false
+                        alert("Badge Number length exceeds the limit, please re-enter Badge Number")//if the if statement is triggered this alert will be activated as a repsonse
+                        badge();} // if the statement is triggered the if statement will restart the function
+                    
+            }
+            badge(); //completes the function and starts the web page
+
+        </script>
+    </head>
+    <body style="background-color: rgb(167, 164, 164);">
+       <h1>Launch Sequence</h1> 
+       <p>This will begin the launch sequence.</p>
+       <h2>Countdown</h2>
+       <!-- This is a button to start the countdown-->
+       <button type="button" onclick="StartTheCountdown()">Start Countdown</button>
+       <p id="CountdownDisplay">10</p>
+    </body>
+    <audio src="just-relax-11157.mp3" autoplay controls loop >    
+    </audio>
+</html>
